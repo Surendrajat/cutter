@@ -16,6 +16,7 @@ jobs:
       - name: install dependencies
         run: |
           sudo apt-get install -y doxygen
+          export PATH="/home/runner/.local/bin:$PATH"
           pip3 install -U sphinx breathe sphinx-rtd-theme recommonmark
       - name: build docs
         run: |
