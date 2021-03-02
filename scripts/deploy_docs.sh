@@ -7,7 +7,7 @@ cutter_commit="$(git show -s --format="%H %s")"
 
 echo "Cloning current cutter.re"
 
-git clone --depth 1 git@github.com:rizinorg/cutter.re.git || exit 1
+git clone --depth 1 git@github.com:Surendrajat/cutter.re.git || exit 1
 
 echo "Updating docs"
 
