@@ -17,8 +17,8 @@ jobs:
         run: |
           sudo apt-get install -y doxygen
           export PATH="/home/runner/.local/bin:$PATH"
-          locate sphinx-build
           pip install -U sphinx breathe sphinx-rtd-theme recommonmark
+          ls /home/runner/.local/bin
       - name: build docs
         run: |
           cd docs
